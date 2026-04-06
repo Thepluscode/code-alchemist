@@ -1,0 +1,6 @@
+package com.theplus.codealchemist.domain.enums;
+
+public enum PipelineStep {
+    INGESTION, EXTRACTION, GRAPH_BUILDING, AWAITING_APPROVAL,
+    ARCHITECTURE_DESIGN, CODE_GENERATION, VALIDATION, MIGRATION_PLANNING, COMPLETED
+}
