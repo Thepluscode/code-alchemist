@@ -2,6 +2,8 @@ package com.theplus.cyberguard.alchemist.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -27,6 +29,7 @@ public class GraphNode {
     @Column(name = "source_file_id")
     private UUID sourceFileId;
 
+    @JdbcTypeCode(SqlTypes.JSON)
     @Column(columnDefinition = "jsonb")
     private String metadata;
 

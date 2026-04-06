@@ -2,6 +2,8 @@ package com.theplus.cyberguard.alchemist.domain;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.hibernate.annotations.JdbcTypeCode;
+import org.hibernate.type.SqlTypes;
 
 import java.time.Instant;
 import java.util.UUID;
@@ -26,6 +28,7 @@ public class SourceFile {
     @Column(name = "raw_content", columnDefinition = "TEXT")
     private String rawContent;
 
+    @JdbcTypeCode(SqlTypes.JSON)
     @Column(name = "parsed_ast", columnDefinition = "jsonb")
     private String parsedAst;
 
@@ -35,6 +38,7 @@ public class SourceFile {
     @Column(name = "line_count")
     private Integer lineCount;
 
+    @JdbcTypeCode(SqlTypes.JSON)
     @Column(name = "structural_elements", columnDefinition = "jsonb")
     private String structuralElements;
 
