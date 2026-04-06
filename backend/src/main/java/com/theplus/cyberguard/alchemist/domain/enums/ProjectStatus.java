@@ -1,0 +1,6 @@
+package com.theplus.cyberguard.alchemist.domain.enums;
+
+public enum ProjectStatus {
+    CREATED, INGESTING, EXTRACTING, GRAPH_BUILDING, AWAITING_APPROVAL,
+    DESIGNING, GENERATING, VALIDATING, PLANNING_MIGRATION, COMPLETED, FAILED
+}
