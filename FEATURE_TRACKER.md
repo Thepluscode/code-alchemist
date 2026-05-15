@@ -1,5 +1,18 @@
 # Code Alchemist — Feature Tracker
 
+> **🛑 PROJECT STATUS: ARCHIVED / PAUSED (re-verified 2026-05-13)**
+>
+> - **No commits since 2026-04-06** (5+ weeks of inactivity)
+> - **All production URLs return HTTP 404** as of 2026-05-13:
+>   - `https://backend-production-5a49.up.railway.app/actuator/health` → 404
+>   - `https://frontend-production-41ec.up.railway.app/` → 404
+> - The "VERIFIED" entries below describe state on **2026-04-06**, not now.
+> - Railway services have been deleted, paused, or had their URLs changed.
+>
+> **If you intend to resurrect this project:** re-deploy backend + frontend, restore Postgres, then re-verify every row. The "Pending" list at the bottom (ANTHROPIC_API_KEY, retest /files/inline, etc.) was never completed.
+
+Last verified (project health): 2026-05-13 — confirmed ARCHIVED
+
 ## Infrastructure
 
 | Feature | Status | Evidence |
